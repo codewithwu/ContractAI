@@ -1,0 +1,480 @@
+{
+  "overall_risk_score": 52,
+  "risk_level": "高风险",
+  "total_clauses": 10,
+  "total_risks_found": 34,
+  "high_risk_clauses": 6,
+  "medium_risk_clauses": 1,
+  "clauses_analysis": [
+    {
+      "page_content": "设备采购合同\n甲方（采购方）：示例科技有限公司\n乙方（供应方）：测试设备有限公司\n鉴于甲方拟采购一批办公设备，乙方同意供应，双方经友好协商，达成如下协议：",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 7,
+        "type": "main_clause",
+        "clause_title": "合同前言",
+        "sub_clause_count": 0
+      },
+      "risks": [],
+      "risk_score": 85,
+      "review_status": "低风险"
+    },
+    {
+      "page_content": "第一条 设备规格与数量\n1.1 设备名称：高性能办公电脑\n1.2 技术规格：Intel i7处理器，16GB内存，512GB SSD\n1.3 数量：50台\n1.4 单价：人民币6,500元\n1.5 总价：人民币325,000元",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 14,
+        "type": "main_clause",
+        "clause_title": "第一条 设备规格与数量",
+        "sub_clause_count": 5
+      },
+      "risks": [],
+      "risk_score": 85,
+      "review_status": "低风险"
+    },
+    {
+      "page_content": "第二条 付款条件\n2.1 合同签订后，甲方支付合同总价的50%作为预付款。\n2.2 乙方应在收到预付款后开始生产。\n2.3 剩余款项在设备验收合格后支付。",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 19,
+        "type": "main_clause",
+        "clause_title": "第二条 付款条件",
+        "sub_clause_count": 3
+      },
+      "risks": [
+        {
+          "type": "财务风险",
+          "level": "medium",
+          "description": "发现关键词: 支付",
+          "position": "第2行",
+          "category": "financial_risk"
+        },
+        {
+          "type": "财务风险",
+          "level": "medium",
+          "description": "发现关键词: 付款",
+          "position": "第1行",
+          "category": "financial_risk"
+        },
+        {
+          "type": "财务风险",
+          "level": "medium",
+          "description": "发现关键词: 预付款",
+          "position": "第2行",
+          "category": "financial_risk"
+        },
+        {
+          "type": "财务风险",
+          "level": "high",
+          "description": "付款条件模糊",
+          "position": "条款内容",
+          "category": "financial_risk"
+        },
+        {
+          "type": "财务风险",
+          "level": "high",
+          "description": "预付款比例较高",
+          "position": "条款内容",
+          "category": "financial_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 验收",
+          "position": "第4行",
+          "category": "delivery_risk"
+        }
+      ],
+      "risk_score": 30,
+      "review_status": "待审核",
+      "risk_analysis": "该条款存在多个潜在风险，主要集中在付款条件的明确性和预付款比例上。此外，验收标准模糊也增加了后续纠纷的可能性。",
+      "specific_risks": [
+        "支付",
+        "付款",
+        "预付款",
+        "付款条件模糊",
+        "预付款比例较高",
+        "验收"
+      ],
+      "modification_suggestions": [
+        "建议修改为：'合同签订后，甲方应在收到乙方提供的履约保函或等额银行保函之日起5个工作日内向乙方支付合同总价的50%作为预付款。'",
+        "建议修改为：'剩余款项在设备验收合格且质量符合合同约定标准后支付。'"
+      ],
+      "legal_basis": "《中华人民共和国民法典》第768条关于合同履行的规定；《中华人民共和国担保法》关于履约保函的相关规定。",
+      "negotiation_tips": "建议与对方就预付款比例和验收标准进行进一步协商，确保双方对这些关键条款的理解一致。",
+      "risk_level": "中风险"
+    },
+    {
+      "page_content": "第三条 交付与验收\n3.1 交付地点：甲方指定仓库\n3.2 交付时间：合同生效后30日内\n3.3 验收标准：按照行业通用标准验收\n3.4 验收期限：设备到达后7个工作日内完成验收",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 25,
+        "type": "main_clause",
+        "clause_title": "第三条 交付与验收",
+        "sub_clause_count": 4
+      },
+      "risks": [
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 交付",
+          "position": "第1行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 验收",
+          "position": "第1行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 标准",
+          "position": "第4行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 时间",
+          "position": "第3行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 期限",
+          "position": "第5行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 验收标准",
+          "position": "第4行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "high",
+          "description": "验收标准模糊",
+          "position": "条款内容",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "high",
+          "description": "标准定义不清",
+          "position": "条款内容",
+          "category": "delivery_risk"
+        }
+      ],
+      "risk_score": 30,
+      "review_status": "待审核",
+      "risk_analysis": "该条款存在多个问题，主要集中在验收标准、时间期限和验收期限的明确性上。此外，验收标准描述为‘照行业通用标准’不够具体。",
+      "specific_risks": [
+        "交付地点模糊不清",
+        "验收标准不清晰",
+        "验收期限模糊"
+      ],
+      "modification_suggestions": [
+        "修改建议1：将第三条中的'3.2 交付时间：合同生效后30日内'改为'3.2 交付时间：自合同签订之日起30天内'",
+        "修改建议2：将第三条中的'3.4 验收期限：设备到达后7个工作日内完成验收'改为'3.4 验收期限：在收到设备并检查合格后的7个工作日内完成'"
+      ],
+      "legal_basis": "《中华人民共和国民法典》第510条规定，合同生效时间应当明确具体。",
+      "negotiation_tips": "建议与对方协商确定具体的验收标准，并确保该标准具有可操作性。同时，可以考虑引入第三方专业机构进行验收以增加透明度和公正性。",
+      "risk_level": "中风险"
+    },
+    {
+      "page_content": "第四条 质量保证\n4.1 质保期：自验收合格之日起12个月\n4.2 在质保期内，如设备出现质量问题，乙方应在收到通知后尽快处理。",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 29,
+        "type": "main_clause",
+        "clause_title": "第四条 质量保证",
+        "sub_clause_count": 2
+      },
+      "risks": [
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 验收",
+          "position": "第2行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 尽快",
+          "position": "第3行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "high",
+          "description": "响应时间不明确",
+          "position": "条款内容",
+          "category": "delivery_risk"
+        }
+      ],
+      "risk_score": 45,
+      "review_status": "待审核",
+      "risk_analysis": "该条款存在多个潜在问题，主要集中在验收标准和响应时间的不确定性上。具体而言，'验收合格'这一表述模糊不清，容易引发争议；而'尽快处理'则缺乏明确的时间限制或惩罚措施。",
+      "specific_risks": [
+        "验收合格的具体定义不清晰",
+        "响应时间未明确规定"
+      ],
+      "modification_suggestions": [
+        "修改为：‘质保期自乙方完成设备安装并经甲方验收合格之日起12个月。’",
+        "增加具体响应时间要求，例如：‘在收到通知后3个工作日内处理质量问题。如未能及时处理，每超过一天需向甲方支付违约金500元。’"
+      ],
+      "legal_basis": "《中华人民共和国合同法》第60条关于当事人应当按照约定全面履行自己的义务的规定；以及相关商业实践中的质量保证条款要求。",
+      "negotiation_tips": "建议在谈判中明确验收标准，并就响应时间达成一致，可以考虑引入惩罚机制以确保乙方能够及时处理质量问题。",
+      "risk_level": "中风险"
+    },
+    {
+      "page_content": "第五条 知识产权\n5.1 乙方保证所提供的设备不侵犯任何第三方知识产权。\n5.2 如有知识产权纠纷，由乙方承担全部责任。",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 33,
+        "type": "main_clause",
+        "clause_title": "第五条 知识产权",
+        "sub_clause_count": 2
+      },
+      "risks": [
+        {
+          "type": "法律风险",
+          "level": "medium",
+          "description": "发现关键词: 知识产权",
+          "position": "第1行",
+          "category": "legal_risk"
+        },
+        {
+          "type": "法律风险",
+          "level": "medium",
+          "description": "发现关键词: 责任",
+          "position": "第3行",
+          "category": "legal_risk"
+        },
+        {
+          "type": "法律风险",
+          "level": "medium",
+          "description": "发现关键词: 纠纷",
+          "position": "第3行",
+          "category": "legal_risk"
+        },
+        {
+          "type": "法律风险",
+          "level": "high",
+          "description": "责任分配不均",
+          "position": "条款内容",
+          "category": "legal_risk"
+        }
+      ],
+      "risk_score": 35,
+      "review_status": "待审核",
+      "risk_analysis": "该条款存在多个潜在法律风险，主要集中在知识产权侵权责任分配不均方面。具体来看，第5.1条中提到乙方保证所提供的设备不侵犯任何第三方知识产权，但未明确界定“设备”涵盖的具体范围；而第5.2条则规定了在发生知识产权纠纷时由乙方承担全部责任。这种责任分配可能引发争议。",
+      "specific_risks": [
+        "乙方提供的设备范围不清",
+        "责任分配不均"
+      ],
+      "modification_suggestions": [
+        "建议修改第5.1条，明确界定“设备”涵盖的具体范围，例如：‘乙方保证所提供的所有硬件、软件及其相关文档不侵犯任何第三方知识产权。’",
+        "建议在第5.2条中增加甲方的配合义务和责任分担机制，例如：‘如因乙方提供的设备导致甲方遭受第三方知识产权侵权纠纷，乙方应承担全部赔偿责任，并负责协助甲方处理该纠纷；同时，甲方也有权根据实际情况要求乙方承担部分责任。’"
+      ],
+      "legal_basis": "《中华人民共和国合同法》第120条关于违约责任的规定，《中华人民共和国民法典》第854条关于损害赔偿的规定。",
+      "negotiation_tips": "在谈判过程中，建议明确设备的具体范围，并就知识产权纠纷的责任分担机制达成一致意见。可以考虑引入第三方调解或仲裁机制来解决可能的争议。",
+      "risk_level": "中风险"
+    },
+    {
+      "page_content": "第六条 保密条款\n6.1 双方应对本合同内容及在履行过程中知悉的对方商业秘密承担保密义务。\n6.2 保密期限为合同终止后2年。",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 37,
+        "type": "main_clause",
+        "clause_title": "第六条 保密条款",
+        "sub_clause_count": 2
+      },
+      "risks": [
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 期限",
+          "position": "第3行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "法律风险",
+          "level": "medium",
+          "description": "发现关键词: 保密",
+          "position": "第1行",
+          "category": "legal_risk"
+        }
+      ],
+      "risk_score": 65,
+      "review_status": "待审核",
+      "risk_analysis": "该条款存在两个主要问题：一是保密期限的设定可能引发争议，二是表述不够严谨。具体来说，在6.2保密期限为合同终止后2年这一句中，‘2年’这个时间长度可能会引起对方质疑其合理性或合法性。",
+      "specific_risks": [
+        "保密期限设定不合理",
+        "保密条款表述不严谨"
+      ],
+      "modification_suggestions": [
+        "建议修改为：'双方应对本合同内容及在履行过程中知悉的对方商业秘密承担保密义务，保密期限自本合同终止之日起算两年。'",
+        "建议修改为：'双方应就本合同内容及在履行过程中知悉的对方商业秘密承担保密义务，并约定保密期限为合同终止后两年。'"
+      ],
+      "legal_basis": "《中华人民共和国合同法》第10条规定，当事人应当按照约定全面履行自己的义务。",
+      "negotiation_tips": "建议与对方协商确定一个合理的保密期限，可以参考行业惯例或双方的实际需求来设定，以确保条款的公平性和合理性。",
+      "risk_level": "中风险"
+    },
+    {
+      "page_content": "第七条 违约责任\n7.1 如乙方延迟交付，每延迟一天支付合同总价0.1%的违约金。\n7.2 如甲方延迟付款，应按照银行同期贷款利率支付利息。",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 41,
+        "type": "main_clause",
+        "clause_title": "第七条 违约责任",
+        "sub_clause_count": 2
+      },
+      "risks": [
+        {
+          "type": "财务风险",
+          "level": "medium",
+          "description": "发现关键词: 支付",
+          "position": "第2行",
+          "category": "financial_risk"
+        },
+        {
+          "type": "财务风险",
+          "level": "medium",
+          "description": "发现关键词: 付款",
+          "position": "第3行",
+          "category": "financial_risk"
+        },
+        {
+          "type": "财务风险",
+          "level": "medium",
+          "description": "发现关键词: 违约金",
+          "position": "第2行",
+          "category": "financial_risk"
+        },
+        {
+          "type": "财务风险",
+          "level": "medium",
+          "description": "发现关键词: 利息",
+          "position": "第3行",
+          "category": "financial_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 交付",
+          "position": "第2行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "交付风险",
+          "level": "medium",
+          "description": "发现关键词: 延迟",
+          "position": "第2行",
+          "category": "delivery_risk"
+        },
+        {
+          "type": "法律风险",
+          "level": "medium",
+          "description": "发现关键词: 责任",
+          "position": "第1行",
+          "category": "legal_risk"
+        }
+      ],
+      "risk_score": 30,
+      "review_status": "待审核",
+      "risk_analysis": "该条款存在多个潜在风险，主要集中在违约金的计算方式和利息支付上。具体来说，违约金的计算比例较高（0.1%），且没有明确约定延迟交付的具体时间范围；同时，利息支付部分仅依据银行同期贷款利率，缺乏更具体的商业考量或法律支持。",
+      "specific_risks": [
+        "违约金计算比例过高",
+        "未明确延迟交付的时间范围",
+        "利息支付依据不充分"
+      ],
+      "modification_suggestions": [
+        "修改违约金条款为：'如乙方延迟交付货物，每超过一天，应向甲方支付合同总价0.1%的违约金；若延迟时间超过30天，则每超过一天，应向甲方支付合同总价0.2%的违约金。'",
+        "在利息支付部分增加商业考量或法律依据：'如甲方延迟付款，乙方有权要求甲方按照中国人民银行同期贷款利率支付逾期付款期间的利息，并且甲方还需承担因延迟付款给乙方造成的其他损失（包括但不限于合理的律师费、差旅费等）'"
+      ],
+      "legal_basis": "《中华人民共和国民法典》第五百七十七条：当事人一方不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。",
+      "negotiation_tips": "在谈判过程中，建议与对方协商明确延迟交付的具体时间范围，并考虑引入更合理的利息计算方式或增加其他补偿条款。",
+      "risk_level": "中风险"
+    },
+    {
+      "page_content": "第八条 争议解决\n8.1 本合同适用中华人民共和国法律。\n8.2 如发生争议，双方应友好协商解决；协商不成的，提交甲方所在地人民法院诉讼解决。",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 45,
+        "type": "main_clause",
+        "clause_title": "第八条 争议解决",
+        "sub_clause_count": 2
+      },
+      "risks": [
+        {
+          "type": "法律风险",
+          "level": "medium",
+          "description": "发现关键词: 争议",
+          "position": "第1行",
+          "category": "legal_risk"
+        },
+        {
+          "type": "法律风险",
+          "level": "medium",
+          "description": "发现关键词: 诉讼",
+          "position": "第3行",
+          "category": "legal_risk"
+        },
+        {
+          "type": "法律风险",
+          "level": "high",
+          "description": "管辖地单方有利",
+          "position": "条款内容",
+          "category": "legal_risk"
+        },
+        {
+          "type": "法律风险",
+          "level": "high",
+          "description": "解决方式模糊",
+          "position": "条款内容",
+          "category": "legal_risk"
+        }
+      ],
+      "risk_score": 30,
+      "review_status": "待审核",
+      "risk_analysis": "该条款存在多处问题，主要集中在法律适用、争议解决方式以及管辖地的选择上。具体表现为：1. 法律适用方面仅规定了中华人民共和国法律，缺乏更具体的法律规定；2. 争议解决方式模糊不清，未明确是否包括仲裁等其他争议解决途径；3. 管辖地选择甲方所在地法院，存在单方优势，可能不利于对方权益保护。",
+      "specific_risks": [
+        "本合同适用中华人民共和国法律",
+        "提交甲方所在地人民法院诉讼解决"
+      ],
+      "modification_suggestions": [
+        "修改法律适用条款为：'本合同的解释和履行均适用中华人民共和国法律。'",
+        "明确争议解决方式，建议增加仲裁作为补充解决途径，如：'如发生争议，双方应友好协商解决；协商不成的，可提交至中国国际经济贸易仲裁委员会进行仲裁或向甲方所在地人民法院提起诉讼。'"
+      ],
+      "legal_basis": "《中华人民共和国合同法》第126条、《中华人民共和国民事诉讼法》第34条",
+      "negotiation_tips": "在谈判过程中，建议提出增加仲裁条款作为争议解决方式的提议，并强调仲裁的优势和中立性。同时，可以考虑在合同中加入关于仲裁地点的选择，以平衡双方利益。",
+      "risk_level": "中风险"
+    },
+    {
+      "page_content": "第九条 其他\n9.1 本合同一式两份，双方各执一份，具有同等法律效力。\n9.2 本合同自双方授权代表签字盖章之日起生效。\n甲方：示例科技有限公司\n授权代表：______________\n日期：______________\n乙方：测试设备有限公司\n授权代表：______________\n日期：______________",
+      "metadata": {
+        "source": "uploads/test_contract.docx",
+        "paragraph_id": 55,
+        "type": "main_clause",
+        "clause_title": "第九条 其他",
+        "sub_clause_count": 2
+      },
+      "risks": [],
+      "risk_score": 85,
+      "review_status": "低风险"
+    }
+  ],
+  "summary": "合同存在多处高风险条款，建议法务部门重点审查。",
+  "llm_enhanced": true,
+  "timestamp": "2024-01-01 10:00:00",
+  "analysis_timestamp": "2025-11-16T20:43:16.226838",
+  "file_name": "test_contract.docx"
+}
